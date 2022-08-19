@@ -5,10 +5,10 @@ Console.Write("Введите число: ");// работает
 string? number = Console.ReadLine();
 void CheckingNumber(string number)
 {
-  if (number[0]==number[4] || number[1]==number[3]){
-    Console.WriteLine($"Ваше число: {number} - палиндром.");
+  if (number[0]==number[4] && number[1]==number[3]){
+    Console.WriteLine($"{number} - палиндром.");
   }
-  else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+  else Console.WriteLine($"{number} - НЕ палиндром.");
 }
 
 if (number!.Length == 5){
@@ -16,28 +16,16 @@ if (number!.Length == 5){
 }
 else Console.WriteLine($"Введите пятизначное число");
 // //sssssssssssssssssssssssssssss
-// Console.WriteLine("Введите N"); //задача 19 полиндром сырое
-// int N = Convert.ToInt32(Console.ReadLine());
 
-// if(N<10000 && N> 100000)
+// Console.WriteLine("Введите N"); // задача 19 полиндром, условие не работает,
+// int N = Convert.ToInt32(Console.ReadLine());
+// if (N<10000 || N> 100000)
 // {
 //     Console.WriteLine("Введите пятизначное число ");
 // }
-// else if (number[0]==number[4] || number[1]==number[3]){
-//     Console.WriteLine($"Ваше число: {number} - палиндром.");
-//   }
-//   else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
-
-// //ssssssssssssssssssssssssssssssssssss
-// Console.WriteLine("Введите N"); // задача 19 полиндром, условие не работает, сегодня голова не варит
-// int N = Convert.ToInt32(Console.ReadLine());
-// if (N<10000 & N> 100000)
+// else (N /= 10000 == N %= 10 && N /= 1000 == N %=100);
 // {
-//     Console.WriteLine("Введите пятизначное число ");
-// }
-// else if (N =/ 10000 == N%=10 || N/=1000 == N% = 100)
-// {
-//     Console.WriteLine($"Ваше число: {N} - палиндром.");
+//     Console.WriteLine($"число: {N} - палиндром.");
 //   }
 
 //sssssssssssssssssssssssssssssssssssssssss
